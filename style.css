@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+/*top box elements*/
+.top-box{
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(204, 43%, 93%);
+}
+.top-box-title{
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    padding: 0 20px;
+}
+.top-box-subtitle{
+    font-weight: 700;
+    color:hsl(71, 73%, 54%) ;
+    padding: 0 20px;
+}
+.top-box-text{
+    color:hsl(218, 22%, 67%);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+/*dwon elements*/
+.squares{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+/*left box elements*/
+.left-box{
+    flex-direction: row;
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+
+}
+.left-box-title{
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.left-box-text-span{
+    color: hsl(204, 43%, 93%);
+    padding-left:20px;
+    padding-bottom: 10px;
+    float: left;
+
+}
+.price{
+    font-weight: 700;
+    font-size: 2.7em;
+    padding: 0 20px 10px 0;
+    display: inline;
+}
+.not-price{
+    display: inline;
+    color:hsla(203, 32%, 92%, 0.74);
+}
+.left-box-text{
+    color: hsl(204, 43%, 93%);
+    padding-left:20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    clear: both;
+}
+.button-div{
+    padding: 15px 0 15px 0;
+    margin: 8px 0 8px 0;
+    text-align: center;
+
+}
+button{
+    background-color:hsl(71, 58%, 50%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(204, 43%, 93%);
+    width: 60%;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    box-shadow:5px 10px 18px #2049468c;
+}
+
+
+/*right box elements*/
+.right-box{
+    background-color: hsla(177, 54%, 51%, 0.877);
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+    padding-bottom: 20px;
+}
+.right-box-title{
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    padding: 0 20px;
+}
+.right-box-text{
+    color: hsl(200, 5%, 88%);
+    padding-left: 20px;
+    padding-bottom: 8px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    background-color:#e9e9e98c;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+    .squares {
+      flex-direction: column;
+    }
+    .right-box, .left-box{
+        width: 100%;
+    }
+    .right-box-title{
+        font-size: 36px;
+    }
+
+}
+@media screen and (max-width: 390px) {
+    .left-box-title, .right-box-title{
+        font-size: 20.8px;
+    }
+}
